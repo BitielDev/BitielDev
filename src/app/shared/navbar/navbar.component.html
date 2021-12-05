@@ -1,0 +1,32 @@
+<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
+  <div class="container">
+    <a class="navbar-brand mr-lg-5" [routerLink]="['']">
+      <h3 style="color: white; font-weight: 600; text-transform: capitalize;">Bitiel</h3>
+    </a>
+    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+        <li class="nav-item dropdown">
+          <a href="https://www.bitiel.xyz/privacy-policy.html" class="nav-link no-caret" target="_blank">
+            <i class="ni ni-ui-04 d-lg-none"></i>
+            <span class="nav-link-inner--text">Privacy Policy</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+        
+        <li class="nav-item d-none d-lg-block ml-lg-4">
+          <a href="https://play.google.com/store/apps/details?id=com.bitiel.sleeprelax" target="_blank" class="btn btn-neutral btn-icon">
+            <span class="btn-inner--icon">
+              <i class="fa fa-cloud-download mr-2"></i>
+            </span>
+            <span class="nav-link-inner--text">Download</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
