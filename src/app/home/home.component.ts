@@ -17,9 +17,10 @@ export class HomeComponent implements OnInit {
     focus1;
     constructor(private analytics: AngularFireAnalytics) { }
 
-    ngOnInit() {}
-    handleClick(){
-        console.log('****hello click here');
-        this.analytics.logEvent('custom_event_here', { });
+    ngOnInit() {
+        this.analytics.setCurrentScreen('bitiel_home')
+    }
+    logDownloadClick(downloadPlacement: string){
+        this.analytics.logEvent('download_click', { 'download_placement': downloadPlacement});
     }
 }

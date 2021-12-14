@@ -10,7 +10,7 @@
     <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
       <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
         <li class="nav-item dropdown">
-          <a href="https://www.bitiel.xyz/privacy-policy.html" class="nav-link no-caret" target="_blank">
+          <a href="https://www.bitiel.xyz/privacy-policy.html" class="nav-link no-caret" (click)="logPrivacyPolicy('privacy_navbar')" target="_blank">
             <i class="ni ni-ui-04 d-lg-none"></i>
             <span class="nav-link-inner--text">Privacy Policy</span>
           </a>
@@ -19,7 +19,7 @@
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         
         <li class="nav-item d-none d-lg-block ml-lg-4">
-          <a href="https://play.google.com/store/apps/details?id=com.bitiel.sleeprelax" target="_blank" class="btn btn-neutral btn-icon">
+          <a href="https://play.google.com/store/apps/details?id=com.bitiel.sleeprelax" target="_blank" (click)="logDownloadClick('download_navbar_button')" class="btn btn-neutral btn-icon">
             <span class="btn-inner--icon">
               <i class="fa fa-cloud-download mr-2"></i>
             </span>
