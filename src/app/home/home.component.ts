@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { AngularFireAnalytics } from '@angular/fire/analytics';
 @Component({
     selector: 'app-home',
     templateUrl: './home.component.html',
@@ -15,7 +15,11 @@ export class HomeComponent implements OnInit {
 
     focus;
     focus1;
-    constructor() { }
+    constructor(private analytics: AngularFireAnalytics) { }
 
     ngOnInit() {}
+    handleClick(){
+        console.log('****hello click here');
+        this.analytics.logEvent('custom_event_here', { });
+    }
 }

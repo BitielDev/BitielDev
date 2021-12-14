@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "bitiel-website": {
+      "hosting": {
+        "bitiel": [
+          "bitiel-website"
+        ]
+      }
+    }
+  }
+}
